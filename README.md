@@ -62,4 +62,12 @@ Dockerfile e Procfile prontos para provedor Python/Docker. Configurar variáveis
 
 Executar migrações e `collectstatic` no deploy. Servir com Gunicorn. WhiteNoise serve CSS/JavaScript, e o endpoint de avatar entrega imagens do armazenamento configurado. SQLite e sistema de arquivos efêmero não garantem persistência entre deploys; para produção configurar PostgreSQL e volume persistente.
 
-**Status da entrega:** código e testes locais em preparação. Repositório GitHub, publicação online e URL de deploy são etapas externas centralizadas pelo agente principal. Não considerar este arquivo prova de hospedagem pública.
+## Aplicação online
+
+https://guiga123434.pythonanywhere.com/
+
+Publicado no PythonAnywhere com Python 3.12 e WSGI, DEBUG=false, HTTPS e chave privada fora do repositório. SQLite em disco persistente e avatares em diretório persistente da conta. Migrações e collectstatic executados. Os perfis de demonstração não possuem senhas utilizáveis; crie sua conta pela interface para testar as interações.
+
+O plano gratuito exige renovar a aplicação mensalmente no painel Web. Em 24/10/2026, o painel informa disponibilidade até 25/11/2026.
+
+Código completo na branch codex/twitter-final (PR 1). Validação: 19 testes aprovados; página pública, feed Explorar e perfis conferidos no deploy.
